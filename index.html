@@ -642,11 +642,6 @@
       .dots { bottom: 12px; right: 16px; }
     }
 
-
-
-    /* ==========================================================
-       FULL IMAGE + TITLE-BASED BACKGROUND VIDEO UPGRADE
-    ========================================================== */
     .slide {
       background: rgba(255,255,255,.62);
       backdrop-filter: blur(1px);
@@ -661,14 +656,14 @@
       z-index: -4;
       overflow: hidden;
       border-radius: inherit;
-      background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,.10));
+      background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,.06));
     }
     .bgVideo {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transform: scale(1.02);
-      filter: saturate(1.08) brightness(.95);
+      filter: saturate(0.98) brightness(.95);
     }
     .bgVideoOverlay {
       position: absolute;
@@ -749,13 +744,6 @@
       *, *::before, *::after { animation: none !important; transition-duration: .001ms !important; }
     }
   
-
-    /* ==========================================================
-       FIT + NO-SLIDER + CINEMATIC UPGRADE
-       Updated for projector screens: larger stage, slightly smaller text,
-       no visible side slider/progress controls, stage-split start, per-slide
-       animated motion backgrounds, and varied slide-to-slide transitions.
-    ========================================================== */
     .stage {
       padding: calc(.8vh + var(--safe-top)) 1.1vw calc(.9vh + var(--safe-bottom));
       background:
@@ -1016,7 +1004,7 @@
       <p>Welcome to our class assembly.<br />Click below to open the stage and begin the slideshow.</p>
       <button class="startBtn" id="startBtn" type="button">▶ Click to Start</button>
     </div>
-    <div class="startHint">After starting: click anywhere, press Space, or use Arrow Keys. Press F for full screen and M for music.</div>
+    <div class="startHint"></div>
   </div>
 
   <div class="transitionOverlay" id="transitionOverlay" aria-hidden="true">
